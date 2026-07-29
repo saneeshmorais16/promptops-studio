@@ -1,0 +1,1 @@
+[{"name":"Synthetic retention answer","use_case":"RAG answer generation","input":"What is the retention window?","context":"The fictional policy states a 30-day window.","expected_keywords":["30-day","window"],"forbidden_phrases":["customer data"],"require_citation":true}]

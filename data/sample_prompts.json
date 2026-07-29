@@ -1,0 +1,1 @@
+[{"prompt_name":"RAG Answer Generator","use_case":"RAG answer generation","prompt_text":"Answer only from supplied synthetic context and cite claims.","version":"v1","status":"testing","tags":["synthetic","rag"]}]
