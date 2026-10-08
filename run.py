@@ -1,2 +1,9 @@
+import os
+
 import uvicorn
-if __name__=="__main__":uvicorn.run("app.main:app",host="127.0.0.1",port=8000,reload=True)
+
+
+if __name__ == "__main__":
+    # Keep the default local demo port, but allow PORT=8001 when running several demos.
+    port = int(os.getenv("PORT", "8000"))
+    uvicorn.run("app.main:app", host="127.0.0.1", port=port, reload=True)
