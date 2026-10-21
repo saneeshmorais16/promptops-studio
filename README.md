@@ -1,5 +1,7 @@
 # PromptOps Studio
 
+[Verification record](docs/VERIFICATION.md)
+
 **A local-first control plane for versioning, testing, comparing, and safely reviewing prompts used in LLM, RAG, and agent workflows.**
 
 PromptOps matters because prompt changes behave like code changes: they can improve one scenario while silently breaking formatting, grounding, safety, or another scenario. Teams need repeatable evidence before approval—not a folder of prompt snippets.
@@ -60,7 +62,9 @@ The same selected cases run against baseline and candidate versions. The report 
 
 Prompt-injection-like text, secret-extraction language, forbidden output, unsupported context claims, formatting failures, and unsafe-request behavior are surfaced for review. There is no auto-deployment and real LLM support is disabled by default.
 
-## Example version comparison
+## Illustrative version comparison
+
+The numbers below explain the output format; they are not measured benchmark results.
 
 | Signal | v1 | v2 |
 |---|---:|---:|
@@ -69,7 +73,7 @@ Prompt-injection-like text, secret-extraction language, forbidden output, unsupp
 | JSON schema | passed | passed |
 | Recommendation | baseline | approve for review |
 
-## Example evaluation output
+## Illustrative evaluation output
 
 ```json
 {
